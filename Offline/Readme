@@ -1,28 +1,29 @@
 This repository contains SLURM batch scripts used for running Graph Neural Network (GNN) experiments as detailed in the associated paper. By following these instructions, you can replicate the results mentioned in the paper.
 Setup Instructions:
 1.	Setup for Results Replication:
-•	Navigate to the "Results_analysis" folder and execute the Python script, "results_setup.py".
-•	Return to the root directory and access the "Slurm_job_orchestration" folder.
-•	Run the Python script, "generate_batch_scripts.py", ensuring to fill in the correct details for your SLURM system.
+  •	Navigate to the "Results_analysis" folder and execute the Python script, "results_setup.py".
+  •	Return to the root directory and access the "Slurm_job_orchestration" folder.
+  •	Run the Python script, "generate_batch_scripts.py", ensuring to fill in the correct details for your SLURM system.
 2.	Running SLURM Scripts for GNN:
-•	The SLURM scripts for GNN tasks are located in the "GNN_b_scripts" folder.
-•	Find the "GNN_scripts_run.txt" file, containing strings for allocating SLURM batch jobs.
-•	Ensure the environment meets prerequisites, including the installation of PyTorch and PyTorch-geometric.
+  •	The SLURM scripts for GNN tasks are located in the "GNN_b_scripts" folder.
+  •	Find the "GNN_scripts_run.txt" file, containing strings for allocating SLURM batch jobs.
+  •	Ensure the environment meets prerequisites, including the installation of PyTorch and PyTorch-geometric.
 3.	Evaluation Process:
-•	Clone this repository in the same directory as an open dataset, likely from m100.
-•	Unpack the cloned repository folders adjacent to the "data" folder of m100.
-•	Follow the provided instructions to execute SLURM jobs for evaluation, which will store results in ".pickle" files.
-•	The training and evaluation folder should resemble the image in the readme.docx
+  •	Clone this repository in the same directory as an open dataset, likely from m100.
+  •	Unpack the cloned repository folders adjacent to the "data" folder of m100.
+  •	Follow the provided instructions to execute SLURM jobs for evaluation, which will store results in ".pickle" files.
+  •	The training and evaluation folder should resemble the image in the readme.docx
  
 4.	Analyzing Results:
-•	Upon job completion, results will be stored in the "results" folder, with sub-folders for each model and future window.
-•	Utilize the "roc_avg.py" script in the "results" folder to calculate the average "ROC" for each model and future window.
+  •	Upon job completion, results will be stored in the "results" folder, with sub-folders for each model and future window.
+  •	Utilize the "roc_avg.py" script in the "results" folder to calculate the average "ROC" for each model and future window.
 5.	Visualization:
-•	Access the "visualization" folder and run the "visualization.py" file to generate figures for different time steps.
+  •	Access the "visualization" folder and run the "visualization.py" file to generate figures for different time steps.
 
 Prerequisites:
 1.	Ensure the environment has the required libraries installed, including but not limited to Pandas, Numpy, PyTorch, PyTorch-geometric, OS, Sklearn, Sys, Pickle, Seaborn, Matplotlib, tqdm
 2.	PyTorch-geometric installation information can be found here based on your operating system.
+
 Additional Notes:
 1.	It's crucial to meet the necessary prerequisites and follow the instructions in the provided order to effectively replicate the results.
 2.	For any queries or clarifications, refer to the associated paper or contact the repository maintainers.
