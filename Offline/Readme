@@ -17,8 +17,6 @@ Setup Instructions:
 4.	Analyzing Results:
   •	Upon job completion, results will be stored in the "results" folder, with sub-folders for each model and future window.
   •	Utilize the "roc_avg.py" script in the "results" folder to calculate the average "ROC" for each model and future window.
-5.	Visualization:
-  •	Access the "visualization" folder and run the "visualization.py" file to generate figures for different time steps.
 
 Prerequisites:
 1.	Ensure the environment has the required libraries installed, including but not limited to Pandas, Numpy, PyTorch, PyTorch-geometric, OS, Sklearn, Sys, Pickle, Seaborn, Matplotlib, tqdm
